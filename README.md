@@ -1,2 +1,3 @@
 # Python
-Python studies
+:heavy_check_mark: Repositorio usado durante estudos de Python.
+
