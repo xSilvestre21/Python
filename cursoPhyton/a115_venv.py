@@ -17,5 +17,6 @@
 # deactivate
 # pip install
 # pip uninstall 
-import pymysql
-print('oi')
+# pip freeze
+# import pymysql
+# print('oi')
