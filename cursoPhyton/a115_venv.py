@@ -11,12 +11,28 @@
 
 
 # Terminal
-# python -m venv venv
+
+# python -m venv venv (cria o ambiente virtual)
 # gcm python
-# venv\Scripts\activate
+# venv\Scripts\activate (ativa o ambiente virtual)
 # deactivate
-# pip install
-# pip uninstall 
+
+
+# pip - instalando pacotes e bibliotecas
+# Instalar última versão:
+# pip install nome_pacote
+# Instalar versão precisa
+# (tem outras formas também não mencionadas)
+# pip install nome_pacote==0.0.0
+# pip install nome_pacote --upgrade
+# Desinstalar pacote
+# pip uninstall nome_pacote
+# Congelar (ver pacotes)
 # pip freeze
-# import pymysql
-# print('oi')
+# pip index version (nome_pacote)
+
+
+# Criando e usando um requirements.txt
+# pip freeze > requirements.txt
+# Instalando tudo do requirements.txt
+# pip install -r requirements.txt

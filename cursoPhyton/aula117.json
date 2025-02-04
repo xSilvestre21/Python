@@ -1,0 +1,24 @@
+{
+  "nome": "Gustavo",
+  "sobrenome": "Silvestre",
+  "enderecos": [
+    {
+      "rua": "R1",
+      "numero": 264
+    },
+    {
+      "rua": "R2",
+      "numero": 442
+    }
+  ],
+  "altura": 1.9,
+  "numeros_preferidos": [
+    21,
+    11,
+    10,
+    8,
+    7
+  ],
+  "dev": true,
+  "nada": null
+}
