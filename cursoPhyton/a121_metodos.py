@@ -1,5 +1,7 @@
 # Métodos em instâncias em Python
 # Hard coded - É algo que foi escrito diretamente no código
+
+
 class Carro:
     def __init__(self, nome):
         self.nome = nome
