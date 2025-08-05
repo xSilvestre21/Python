@@ -35,11 +35,21 @@ class MyOpen:
         print('FECHANDO ARQUIVO')
         self._arquivo.close()
 
+        # raise class_exception(*exception_.args).with_traceback(traceback_)
+        # print(class_exception)
+        # print(exception_)
+        # print(traceback_)]
+
+        exception_.add_note('Minha nota')
+
+        raise ConnectionError('Não deu para conectar')
+        # return True # Tratei a exceção
+
 
 # instancia = MyOpen('aula149.txt', 'w')
 
 with MyOpen('aula149.txt', 'w') as arquivo:
     arquivo.write('Linha1\n')
-    arquivo.write('Linha2\n')
+    arquivo.write('Linha2\n', 123)
     arquivo.write('Linha3\n')
     print('With', arquivo)
