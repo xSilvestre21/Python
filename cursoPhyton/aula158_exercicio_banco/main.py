@@ -33,5 +33,20 @@ Banco será responsável autenticar o cliente e as contas da seguinte maneira:
     * Checar se o cliente é daquele banco
     * Checar se a conta é daquele banco
 Só será possível sacar se passar na autenticação do banco (descrita acima)
-Banco autentica por um método.
+Banco autentica por um método. (autenticar)
 """
+
+import banco
+import pessoas
+import contas
+
+c1 = pessoas.Cliente('Gustavo', 21)
+cc1 = contas.ContaCorrente(111, 222, 0, 0)
+c1.conta = cc1
+santander = banco.Banco()
+santander.clientes.extend([c1])
+santander.contas.extend([cc1])
+santander.agencias.extend([111, 222])
+santander.autenticar(c1, cc1)
+
+cc1.depositar(200)
